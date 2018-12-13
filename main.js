@@ -171,11 +171,11 @@ function keyuphandler(event) {
         rightPressed = false;
     }
 }
-function touchdown(event) {
+function touchdown() {
    
         rightPressed = true; 
 }
 
-function touchup (event) {
+function touchup () {
         rightPressed = false;
     }

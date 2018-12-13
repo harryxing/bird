@@ -31,6 +31,8 @@ document.getElementById("sub3").addEventListener("click", subtract3);
 document.getElementById("gamereset").addEventListener("click", gamespeedreset);
 document.addEventListener("keydown", keydownhandler);
 document.addEventListener("keyup", keyuphandler);
+document.addEventListener("ontouchstart",touchup);
+document.addEventListener("ontouchend",touchdown);
 
 
 // Main function
@@ -169,3 +171,11 @@ function keyuphandler(event) {
         rightPressed = false;
     }
 }
+function touchdown(event) {
+   
+        rightPressed = true; 
+}
+
+function touchup (event) {
+        rightPressed = false;
+    }
